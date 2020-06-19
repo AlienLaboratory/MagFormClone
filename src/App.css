@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+
+@font-face{
+  font-family:'Studio Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src:local('Studio Gothic'), url('./fonts/Studio-Gothic-Alternate-ExtraLight-trial.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body
+{
+width: 100%;
+    color: #292929;
+    line-height: 1.444em;
+}
+.page-container
+{
+  position: relative;
+    max-width: 1120px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-title
+{
+  margin-right: 90px;
+    max-width: 350px;
+    font-size: 2em;
+    line-height: 1.22222em;
+    font-family:'Studio Gothic';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-subtitle
+{
+  max-width: 640px;
+    font-size: 1.33em;
+    line-height: 1.33em;
+    font-weight:600;
+    font-family:'Studio Gothic';
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Circe,Arial,sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-header
+{
+  display:flex;
+  align-items:flex-start;
+  width: 100%;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.form-body-wrapper
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.form-wrapper
+{
+  position: relative;
+  width: 450px;
+}
+.form-input
+{
+  width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
+    color: #fff;
+    background-color: #0056dd;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    outline: none;
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.form-input:focus{
+  background-color:#338bf4;
+}
+
+::-webkit-input-placeholder {
+  color:#6496e6;
+}
+
+
+.form-submit
+{
+  display:inline-block;
+  padding: 18px 80px 14px;
+    background-color: #142333;
+    border-radius: 32px;
+    font-size:18px;
+    font-family: Circe;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    -webkit-transition: box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    cursor: pointer;
+    align-self: center;
+}
+
+form
+{
+  display: block;
+    margin-top: 0em;
+}
+
+button, input, select, textarea {
+  font-family: Helvetica Neue,Helvetica,serif;
+  font-size: 18px;
+  color: #292929;
+}
+
+.page-wrapper
+{
+  display: block;
+  min-height:100vh;
+  background-image:url(https://madappgang.com/static/getintouch_background-df5789fd2ef610c6ea5dc87aafbdca65.webp);
+  position: relative;
+  padding: 100px 0 200px;
+  background-color: #006ef1;
+  background-repeat: no-repeat;
+  background-position: right top -80px;
+}
+
+.next-wrapper
+{
+  width: 450px;
+    padding: 35px;
+    margin-right: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.next-title
+{
+  margin-bottom:15px;
+  font-size: 1.444em;
+    line-height: 1.23em;
+}
+
+
+@media screen and (max-width:1024px)
+{
+  .form-wrapper{
+width: 320px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .form-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  }
+
+  
+
+
+  @media screen and (max-width: 767px)
+  {
+.form {
+    padding: 0 20px;
+}
+  }
+
+  @media screen and(max-width:1024px)
+{
+  .form-title
+  {
+ max-width:225px;
+  }
+
+  .form-subtitle
+  {
+max-width:440px;
+  }
+}
+
+@media screen and (max-width:1024px)
+{
+  .next-wrapper{
+width: 320px;
+    padding: 30px;
+}}
+
+@media screen and (max-width: 1199px)
+{
+.next-wrapper {
+    margin-right: 0;
+}
+}
+
+
+@media screen and (max-width: 1024px){
+.page-container {
+    max-width: 690px;
+}
+}
+
+
+
+@media screen and (max-width: 1024px){
+body {
+    line-height: 1.5em;
+}
+}
+
+
+@media screen and (max-width: 1024px){
+button, html, input, select, textarea {
+    font-size: 16px;
+}}
+
+
+@media screen and (max-width: 1024px){
+.section-subtitle {
+    max-width: 440px;
+}}
+
+@media screen and (max-width: 767px){
+  .next-wrapper {
+    width: 100%;
+    margin-top:100px;
+  }
+  }
